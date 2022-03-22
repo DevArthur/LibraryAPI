@@ -15,7 +15,7 @@ app.UseSwaggerUI();
 // Configure the HTTP request pipeline.
 app.UseHttpsRedirection();
 
-// APIs
+// API Endpoints
 app.MapGet("/books", async (LibraryDataBaseContext context) =>
     await context.Books.ToListAsync());
 
